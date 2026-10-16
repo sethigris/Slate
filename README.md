@@ -2,7 +2,7 @@
 
 **Slate is a minimal Windows desktop app and local system API.** Open one window to inspect your computer, check whether the API is responding, browse processes, drives and Windows services, review diagnostics and activity, and copy the API key for trusted local integrations.
 
-- **Platform:** Windows 10
+- **Platform:** Windows 10 and expected to be compatible with Windows 11
 - **Language:** C# 5.0
 - **Runtime:** .NET Framework 4.5-compatible APIs
 - **Dependencies:** .NET Framework only; no third-party packages
