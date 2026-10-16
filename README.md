@@ -46,6 +46,11 @@ test.bat
 
 The scripts look for `csc.exe` in both `%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\` and `%WINDIR%\Microsoft.NET\Framework\v4.0.30319\`. If neither exists, install a compatible .NET Framework developer/compiler environment.
 
+## These are the images below :
+![Slate Online](images/slate-online.PNG)
+![Slate Stopped](images/slate-stopped.PNG)
+![Slate Offline](images/slate-offline.PNG)
+
 ## API usage
 
 The desktop app is the main interface for people. The HTTP API is for developers, scripts, and trusted local programs that want to read system information without parsing the UI.
