@@ -1,0 +1,19 @@
+Slate desktop build status
+==========================
+
+Architecture: Windows Forms desktop application plus loopback HTTP API.
+C# language mode: 5.0.
+Target framework: .NET Framework 4.5.
+GUI output: bin\Slate.exe (Windows GUI executable).
+Console tests: bin\Slate.Tests.exe (separate visible self-test runner).
+
+On Windows, run run.bat to compile the GUI if needed and open it. Run test.bat to compile and execute the core self-tests.
+
+Validation performed in this package build:
+- Slate.csproj XML parsed successfully.
+- All source files referenced by the project and both batch scripts exist.
+- C# source delimiters and Program.cs preprocessor directives were checked.
+- The source contains no C# 6+ constructs detected by the static scan.
+- The ZIP archive is verified after packaging.
+
+A compatible Windows .NET Framework C# compiler is not available in the packaging environment, so the GUI has not been compiled or run on Windows here. Run run.bat and test.bat on the target Windows 10 PC before relying on the result. Static checks do not replace a Windows compile and runtime test.

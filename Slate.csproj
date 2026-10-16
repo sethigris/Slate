@@ -1,0 +1,45 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7C77B53-31B4-4218-9E8A-13C7AF03DF10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Slate</RootNamespace>
+    <AssemblyName>Slate</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <LangVersion>5</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <OutputPath>bin\</OutputPath>
+    <StartupObject>Slate.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\UI\MainForm.cs" />
+    <Compile Include="src\Configuration\AppConfig.cs" />
+    <Compile Include="src\Core\ApiResponse.cs" />
+    <Compile Include="src\Core\ApiServer.cs" />
+    <Compile Include="src\Core\RequestUtilities.cs" />
+    <Compile Include="src\Core\RouteDispatcher.cs" />
+    <Compile Include="src\Infrastructure\FileLogger.cs" />
+    <Compile Include="src\Security\ApiKeyAuthenticator.cs" />
+    <Compile Include="src\Security\RateLimiter.cs" />
+    <Compile Include="src\Serialization\JsonUtil.cs" />
+    <Compile Include="src\Services\DiagnosticsProvider.cs" />
+    <Compile Include="src\Services\DriveProvider.cs" />
+    <Compile Include="src\Services\ProcessProvider.cs" />
+    <Compile Include="src\Services\SystemInfoProvider.cs" />
+    <Compile Include="src\Services\WindowsServiceProvider.cs" />
+    <Compile Include="src\Testing\SelfTests.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

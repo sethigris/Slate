@@ -1,0 +1,8 @@
+@"
+bin/
+obj/
+*.user
+*.suo
+*.log
+slate.config.json
+"@ | Set-Content .gitignore
